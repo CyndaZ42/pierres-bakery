@@ -19,5 +19,14 @@ namespace Bakery.Tests
     {
       Assert.AreEqual(5, Bread.Cost);
     }
+
+    [TestMethod]
+    public void CalcTotalCost_CalculatesCostOfBreadAmount_Int()
+    {
+      int breadAmount = 1;
+      Bread someBread = new Bread(breadAmount);
+      someBread.CalcTotalCost();
+      Assert.AreEqual(5, someBread.TotalCost);
+    }
   }
 }
