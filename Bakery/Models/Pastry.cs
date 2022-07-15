@@ -6,6 +6,7 @@ namespace Bakery
   {
     private static int _Cost = 2;
     public int Amount { get; set; }
+    public int TotalCost { get; set; }
 
     public Pastry(int amount)
     {
@@ -20,6 +21,14 @@ namespace Bakery
     public bool IsPastry()
     {
      return Amount > 0;
+    }
+
+    public void CalcTotalCost()
+    {
+      for (int i = 1; i <= Amount; i ++)
+      {
+        TotalCost += Cost;
+      }
     }
   }
 }
