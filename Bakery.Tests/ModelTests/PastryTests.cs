@@ -29,5 +29,14 @@ namespace Bakery.Tests
       somePastry.CalcTotalCost();
       Assert.AreEqual(2, somePastry.TotalCost);
     }
+
+    [TestMethod]
+    public void CalcTotalCost_CalculatesDiscountOnPastry_Int()
+    {
+      int pastryAmount = 3;
+      Pastry somePastry = new Pastry(pastryAmount);
+      somePastry.CalcTotalCost();
+      Assert.AreEqual(5, somePastry.TotalCost);
+    }
   }
 }
