@@ -8,10 +8,11 @@ namespace Bakery.Tests
   {
     // Test methods go here
     [TestMethod]
-    public void Method_Behavior_ReturnValue()
+    public void IsPastry_checksIfPastry_True()
     {
-      // any necessary logic to prep for test; instantiating new classes, etc.
-      Assert.AreEqual("Behavior is behaving", Pastry.Method("Behavior"));
+      int pastryAmount = 1;
+      Pastry somePastry = new Pastry(pastryAmount);
+      Assert.AreEqual(true, somePastry.IsPastry());
     }
   }
 }
