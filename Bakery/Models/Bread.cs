@@ -27,7 +27,10 @@ namespace Bakery
     {
       for (int i = 1; i <= Amount; i ++)
       {
-        TotalCost += Cost;
+        if (i % 3 != 0)
+        {
+          TotalCost += Cost;
+        }
       }
     }
 
