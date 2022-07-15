@@ -10,7 +10,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void IsBread_checksIfBread_True()
     {
-      Bread someBread = new Bread();
+      Bread someBread = new Bread(1);
       Assert.AreEqual(true, someBread.IsBread());
     }
   }
