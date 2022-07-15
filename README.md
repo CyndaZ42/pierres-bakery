@@ -1,4 +1,4 @@
-# {C# Application Name}
+# Pierre's Bakery
 
 #### By _**Zac Waggoner**_  
 
@@ -19,28 +19,28 @@ _{This is a detailed description of your application. Give as much detail as nee
 ## Setup/Installation Requirements
 
 * Install *`Microsoft .NET SDK`*
-* Place files in a folder named `ProjectName.Solution`
-    <pre>ProjectName.Solution
-    ├── ProjectName
-    └── ProjectName.Tests</pre>
+* Place files in a folder named `Bakery.Solution`
+    <pre>Bakery.Solution
+    ├── Bakery
+    └── Bakery.Tests</pre>
 <details>
 <summary><strong>To Run</strong></summary>
 Navigate to  
-   <pre>ProjectName.Solution
-   ├── <strong>ProjectName</strong>
-   └── ProjectName.Tests</pre>
+   <pre>Bakery.Solution
+   ├── <strong>Bakery</strong>
+   └── Bakery.Tests</pre>
 
-Run ```$ dotnet run``` in the console
+Run `$ dotnet run` in the console
 </details>
 
 <details>
 <summary><strong>For Testing</strong></summary>
 Navigate to  
-    <pre>ProjectName.Solution
-    ├── ProjectName
-    └── <strong>ProjectName.Tests</strong></pre>
+    <pre>Bakery.Solution
+    ├── Bakery
+    └── <strong>Bakery.Tests</strong></pre>
 
-Run ```$ dotnet test``` in the console
+Run `$ dotnet test` in the console
 
 </details>
 <br>

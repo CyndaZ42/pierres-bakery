@@ -1,17 +1,17 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName;
+using Bakery;
 
-namespace ProjectName.Tests
+namespace Bakery.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class BreadTests
   {
     // Test methods go here
     [TestMethod]
     public void Method_Behavior_ReturnValue()
     {
       // any necessary logic to prep for test; instantiating new classes, etc.
-      Assert.AreEqual("Behavior is behaving", ClassName.Method("Behavior"));
+      Assert.AreEqual("Behavior is behaving", Bread.Method("Behavior"));
     }
   }
 }

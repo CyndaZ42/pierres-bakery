@@ -1,11 +1,11 @@
 using System;
 
-namespace ProjectName {
+namespace Bakery {
   public class Program
   {
     public static void Main()
     {
-      Console.WriteLine(ClassName.Method("Behavior"));
+      Console.WriteLine(Bread.Method("Behavior"));
     }
   }
 }

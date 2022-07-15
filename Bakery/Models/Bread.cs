@@ -1,8 +1,8 @@
 using System;
 
-namespace ProjectName
+namespace Bakery
 {
-  public class ClassName
+  public class Bread
   {
     // properties, constructors, methods, etc. go here
     public static string Method(string behavior)
