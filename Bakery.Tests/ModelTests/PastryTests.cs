@@ -14,5 +14,11 @@ namespace Bakery.Tests
       Pastry somePastry = new Pastry(pastryAmount);
       Assert.AreEqual(true, somePastry.IsPastry());
     }
+
+    [TestMethod]
+    public void Cost_checksPastryCost_Int()
+    {
+      Assert.AreEqual(2, Pastry.Cost);
+    }
   }
 }
