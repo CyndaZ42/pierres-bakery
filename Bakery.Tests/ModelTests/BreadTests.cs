@@ -13,5 +13,11 @@ namespace Bakery.Tests
       Bread someBread = new Bread(1);
       Assert.AreEqual(true, someBread.IsBread());
     }
+
+    [TestMethod]
+    public void Cost_checksBreadCost_Int()
+    {
+      Assert.AreEqual(5, Bread.Cost);
+    }
   }
 }
