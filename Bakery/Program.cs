@@ -5,7 +5,7 @@ namespace Bakery {
   {
     public static void Main()
     {
-      Console.WriteLine(Bread.Method("Behavior"));
+
     }
   }
 }

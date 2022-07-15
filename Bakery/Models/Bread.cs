@@ -4,10 +4,9 @@ namespace Bakery
 {
   public class Bread
   {
-    // properties, constructors, methods, etc. go here
-    public static string Method(string behavior)
+    public Bread()
     {
-      return behavior + " is behaving";
+
     }
   }
 }
