@@ -34,6 +34,35 @@ namespace Bakery
       }
     }
 
-
+    public void Print()
+    {
+      string line1 = "";
+      string line2 = "";
+      string line3 = "";
+      string line4 = "";
+      string line5 = "";
+      string line6 = "";
+      string line7 = "";
+      string line8 = "";
+      for (int i = 0; i < Amount; i++)
+      {
+        line1 += "   BBBBBBBBBB******BB******   ";
+        line2 += " @@@@@@@@@@**======**======** ";
+        line3 += " @@@@@@@@@@**==============** ";
+        line4 += " @@@@@@@@@@**==============** "; 
+        line5 += "   %%%%%%%%%%**==========**   ";
+        line6 += "   %%%%%%%%%%**==========**   ";
+        line7 += "   %%%%%%%%%%**==========**   ";
+        line8 += "   %%%%%%%%%%**************   ";
+      }
+      Console.WriteLine(line1);
+      Console.WriteLine(line2);
+      Console.WriteLine(line3);
+      Console.WriteLine(line4);
+      Console.WriteLine(line5);
+      Console.WriteLine(line6);
+      Console.WriteLine(line7);
+      Console.WriteLine(line8);
+    }
   }
 }

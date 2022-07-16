@@ -48,13 +48,15 @@ namespace Bakery {
             Bread moarBread = new Bread(breadAmount);
             moarBread.CalcTotalCost();
             SpeakNSpell("Your total comes to $" + moarBread.TotalCost);
+            moarBread.Print();
             j = 1;
           }
           else
           {
             SpeakNSpell("I'm a trifle deaf in this ear. Speak a little louder next time.");
           }
-        }       
+        }
+        SpeakNSpell("Thankyou for shopping at Pierre's Bakery");
       }
       else if (pie.Contains(menuInput.ToLower()))
       {
@@ -68,6 +70,7 @@ namespace Bakery {
             Pastry moarPastry = new Pastry(pastryAmount);
             moarPastry.CalcTotalCost();
             SpeakNSpell("Your total comes to $" + moarPastry.TotalCost);
+            moarPastry.Print();
             j = 1;
           }
           else
@@ -75,6 +78,7 @@ namespace Bakery {
             SpeakNSpell("I'm a trifle deaf in this ear. Speak a little louder next time.");
           }
         }
+        SpeakNSpell("Thankyou for shopping at Pierre's Bakery");
       }
       else if (deals.Contains(menuInput.ToLower()))
       {
@@ -100,7 +104,6 @@ namespace Bakery {
         MainMenu();
       }
     }
-
 
     public static void SpeakNSpell(string word)
     {
