@@ -23,7 +23,7 @@ namespace Bakery {
       }
       else
       {
-        SpeakNSpell("Oh... Okay. What would you like to buy");
+        SpeakNSpell("Oh... Okay. What would you like to buy?");
       }
       MainMenu();
     }
@@ -32,23 +32,67 @@ namespace Bakery {
     {
       string loaf = "loafbreads";
       string pie = "pastrysdoughnutsbear clawbeignetdanish";
-      string forSale = "menuoptionsinventory";
+      string deals = "dealsalecoupon";
+      string confused = "menuoptionsinventoryprice";
       string exit = "byexitleavesc";
       string menuInput = Console.ReadLine();
       if (loaf.Contains(menuInput.ToLower()))
       {
         SpeakNSpell("How many loaves would you like?");
-        string breadInput = Console.ReadLine();
+        int breadAmount;
+        for (int j = 0; j < 1; j = j)
+        {
+          string breadInput = Console.ReadLine();
+          if (int.TryParse(breadInput, out breadAmount))
+          {
+            Bread moarBread = new Bread(breadAmount);
+            moarBread.CalcTotalCost();
+            SpeakNSpell("Your total comes to $" + moarBread.TotalCost);
+            j = 1;
+          }
+          else
+          {
+            SpeakNSpell("I'm a trifle deaf in this ear. Speak a little louder next time.");
+          }
+        }       
       }
       else if (pie.Contains(menuInput.ToLower()))
       {
         SpeakNSpell("How many pastries would you like?");
-        string pastryInput = Console.ReadLine();
+        int pastryAmount;
+        for (int j = 0; j < 1; j = j)
+        {
+          string pastryInput = Console.ReadLine();
+          if (int.TryParse(pastryInput, out pastryAmount))
+          {
+            Pastry moarPastry = new Pastry(pastryAmount);
+            moarPastry.CalcTotalCost();
+            SpeakNSpell("Your total comes to $" + moarPastry.TotalCost);
+            j = 1;
+          }
+          else
+          {
+            SpeakNSpell("I'm a trifle deaf in this ear. Speak a little louder next time.");
+          }
+        }
       }
-      else if (forSale.Contains(menuInput.ToLower()))
+      else if (deals.Contains(menuInput.ToLower()))
       {
-        SpeakNSpell("Today we have ");
-        string choiche = Console.ReadLine();
+        SpeakNSpell("Here are today's deals."); 
+        SpeakNSpell("Our bread is buy 2 get 1 free,");
+        SpeakNSpell("and we have $1 off pastries for every 3 that you buy.");
+        MainMenu();
+      }
+      else if (confused.Contains(menuInput.ToLower()))
+      {
+        SpeakNSpell("Today we have freshly baked bread and pastries available.");
+        SpeakNSpell("One loaf of bread is $" + Bread.Cost);
+        SpeakNSpell("and all of our pastries are $" + Pastry.Cost);
+        MainMenu();
+      }
+      else if (exit.Contains(menuInput.ToLower()))
+      {
+        SpeakNSpell("See you again soon.");
       }
       else
       {
